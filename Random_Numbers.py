@@ -1,22 +1,16 @@
 import random
 
-NUM_RANDOM = 10
-MIN_RANDOM = 0
-MAX_RANDOM = 100
-
+N_NUMBERS = 10
+MIN_VALUE = 1
+MAX_VALUE = 100
 
 def main():
     """
-    You should write your code for this program in this function.
-    Make sure to delete the 'pass' line before starting to write
-    your own code. You should also delete this comment and replace
-    it with a better, more descriptive one.
+    Print 10 random numbers in the range 1 to 100.
     """
-    for i in range(NUM_RANDOM):
-        print(random.randint(MIN_RANDOM, MAX_RANDOM))
+    random_numbers = [random.randint(MIN_VALUE, MAX_VALUE) for _ in range(N_NUMBERS)]
+    for number in random_numbers:
+        print(number)
 
-
-# This provided line is required at the end of a Python file
-# to call the main() function.
 if __name__ == '__main__':
     main()
